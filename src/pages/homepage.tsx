@@ -20,14 +20,12 @@ import LogoPokemon from "../assets/web/LogoPKM.png";
 import Download from "../assets/web/bg_download.png";
 
 const { Header, Content, Footer } = Layout;
-
 const { Countdown } = Statistic;
+
 export default function HomePage() {
   const deadline = Date.now() + 1000 * 60 * 60 * 24 * 2 + 1000 * 30;
   const timeFormat = "DD :" + " HH :" + " mm :" + " ss";
-  const onFinish: CountdownProps["onFinish"] = () => {
-    console.log("finished!");
-  };
+  const onFinish: CountdownProps["onFinish"] = () => {};
   const [collapsed, setCollapsed] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
