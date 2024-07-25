@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "UTM_Talling";
+  src: url("public/UTMTallingBold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,514 @@
+/* sider bar */
+.open-sider-bar {
+  position: fixed;
+  top: 45%;
+  right: 2px;
+  z-index: 1000;
+  transition: 2s;
+}
+.close-sider-bar {
+  position: fixed;
+  top: 45%;
+  right: 202px;
+  z-index: 1000;
+  transition: 2s;
+}
+.item-close-sider-bar {
+  position: fixed;
+  display: flex;
+  z-index: 1500;
+  top: 20vh;
+  right: -200px;
+  width: 200px;
+  flex-direction: column;
+  transition: 2s;
+}
+.item-open-sider-bar {
+  position: fixed;
+  display: flex;
+  z-index: 1000;
+  top: 20vh;
+  right: 5px;
+  width: 200px;
+  flex-direction: column;
+  transition: 2s;
+}
+.group-sider-bar {
+  margin-top: -350px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  padding: 20px;
+  width: 90%;
+  margin-left: 5%;
+}
+.background-sider-bar {
+  width: 100%;
+}
+
+/* Header */
+.page {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+ul li {
+  display: inline-block;
+}
+ul li a:hover {
+  color: #fff;
+}
+ul li:hover {
+  color: #fff;
+  background-color: transparent;
+}
+.header-container {
+  background: #000;
+  display: flex;
+  height: 98px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.note-age {
+  position: absolute;
+  left: 15%;
+  top: 14px;
+}
+.menu-header {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.item-menu-header {
+  color: #fff;
+  font-family: "UTM_Talling";
+  font-size: 36px;
+  font-style: normal;
+  line-height: normal;
+  justify-content: center;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  gap: 4vw;
+}
+.item-menu-header > li > a {
+  color: #ffffff;
+}
+
+/* Header mobile */
+.header-container-mobile {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background: #000;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  height: 84px;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.item-menu-header-mobile {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  margin-top: 84px;
+  width: 100%;
+  z-index: 1001;
+  background-color: #0e0d0d;
+  opacity: 0.9;
+  color: #fff;
+  align-items: center;
+  height: 100%;
+}
+.solid {
+  border-top: 3px solid #bbb;
+  width: 100%;
+  display: flex;
+  align-content: center;
+}
+.item-menu-header-mobile > li {
+  margin-top: 7%;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-family: UTM Facebook K\&T;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-shadow: 1px 1px 0 #7d350c;
+}
+.item-menu-header-mobile > li > a {
+  color: #ffffff;
+}
+
+.item-menu-header-mobile-closer {
+  display: none;
+  transition: 0.7s;
+}
+
+/* Body */
+.content {
+  margin-top: 98px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/web/bg.png");
+  background-repeat: no-repeat;
+  align-items: center;
+  align-content: center;
+  background-size: cover;
+  position: relative;
+}
+.logo-pokemon {
+  position: absolute;
+  left: 3%;
+  padding: 2%;
+  width: 20vw;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.banner-people {
+  position: absolute;
+  width: 25vw;
+  margin-top: 10vh;
+  z-index: 1;
+}
+.banner-rectage {
+  width: 40vw;
+  margin-top: 37%;
+  z-index: 2;
+}
+.banner-date {
+  display: flex;
+  flex-direction: column;
+  font-family: "UTM_Talling";
+  font-size: 2vw;
+  color: #fff;
+  position: absolute;
+  left: 45%;
+  top: 90%;
+  z-index: 2;
+}
+.banner-date > img {
+  width: 20vw;
+}
+.banner-date > div {
+  margin-top: -12.5%;
+  margin-left: 10%;
+}
+.banner-shop {
+  width: 60vw;
+  align-items: center;
+  z-index: 2;
+}
+.countdown {
+  width: 50%;
+  color: #fff;
+  background-color: rgba(28, 27, 27, 0.8);
+  z-index: 2;
+  margin-top: 1vw;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-countdown > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.title-countdown {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.5vw;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  opacity: 1;
+  margin-top: 10px;
+}
+.banner-countdown > div > span {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 6vw;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 110%;
+  opacity: 1;
+}
+.banner-format-countdown {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4vw;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  gap: 9vw;
+  line-height: 110%;
+  margin-bottom: 2%;
+}
+/* Footer */
+.footer {
+  background-color: #080808;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+}
+.footer-items {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 50px 0px 50px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 10px 40px !important;
+  flex: 2;
+}
+.footer > div {
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+.footer-link > a {
+  color: #fff;
+  padding: 0 10px;
+}
+
+.footer-link {
+  display: flex;
+  line-height: 24px;
+  justify-content: center;
+}
+.footer-link > a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .open-sider-bar {
+    display: none;
+  }
+  .close-sider-bar {
+    display: none;
+  }
+  .item-open-sider-bar {
+    display: none;
+  }
+  .item-close-sider-bar {
+    display: none;
+  }
+  .header-container {
+    display: none;
+  }
+
+  .header-container-mobile {
+    display: flex;
+  }
+
+  .sidebar-close {
+    display: none;
+  }
+
+  .sidebar-open {
+    display: none;
+  }
+
+  .footer img {
+    width: 30%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-items {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    text-transform: capitalize;
+  }
+
+  .footer-18 {
+    display: none;
+  }
+
+  .content {
+    margin-top: 84px;
+  }
+  .logo-pokemon {
+    position: relative;
+    margin-top: 2vh;
+    width: 35vw;
+  }
+  .banner {
+    margin-top: 2vh;
+  }
+  .banner-people {
+    margin-top: 0;
+    width: 70vw;
+  }
+  .banner-shop {
+    width: 90vw;
+  }
+  .banner-rectage {
+    width: 90vw;
+    margin-top: 50%;
+  }
+  .banner-date {
+    display: flex;
+    flex-direction: column;
+    font-family: "UTM_Talling";
+    font-size: 5vw;
+    color: #fff;
+    position: absolute;
+    left: 44%;
+    top: 93%;
+    z-index: 2;
+  }
+  .banner-date > img {
+    width: 50vw;
+  }
+  .banner-date > div {
+    margin-top: -12.5%;
+    margin-left: 10%;
+  }
+  .countdown {
+    width: 90vw;
+    margin-top: 3%;
+  }
+  .title-countdown {
+    font-size: 3vw;
+  }
+  .banner-countdown > div > span {
+    font-size: 10vw;
+  }
+  .banner-format-countdown {
+    font-size: 2vw;
+    gap: 16vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer img {
+    width: 17%;
+    margin-left: 2vw;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 0;
+    padding: 10px;
+  }
+  .item-menu-header-mobile {
+    height: 100%;
+  }
+  .logo-pokemon {
+    margin-top: 3vh;
+  }
+  .banner-people {
+    margin-top: 0;
+    width: 70vw;
+  }
+  .banner-shop {
+    width: 90vw;
+  }
+  .banner-rectage {
+    width: 90vw;
+    margin-top: 50%;
+  }
+  .banner-date {
+    left: 44%;
+    top: 93%;
+  }
+  .banner-date > img {
+    width: 50vw;
+  }
+  .banner-date > div {
+    margin-top: -12.5%;
+    margin-left: 10%;
+  }
+  .banner-format-countdown {
+    font-size: 2vw;
+    gap: 17vw;
+  }
+  .countdown {
+    width: 90vw;
+    margin-top: 3%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .countdown {
+    width: 90vw;
+    margin-top: 3%;
+  }
+  .item-menu-header-mobile {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner-rectage {
+    margin-top: 50%;
+  }
+  .item-menu-header-mobile {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .banner-rectage {
+    margin-top: 40%;
+  }
+  .open-sider-bar {
+    top: 45%;
+  }
+  .close-sider-bar {
+    top: 45%;
+  }
+  .item-close-sider-bar {
+    top: 20vh;
+  }
+  .item-open-sider-bar {
+    top: 20vh;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .banner-rectage {
+    margin-top: 35%;
+  }
+  .open-sider-bar {
+    top: 37%;
+  }
+  .close-sider-bar {
+    top: 37%;
+  }
+}
