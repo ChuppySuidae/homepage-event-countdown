@@ -1,17 +1,19 @@
 /* sider bar */
 .open-sider-bar {
   position: fixed;
-  top: 45%;
+  top: 50vh;
   right: 2px;
   z-index: 1000;
-  transition: 2s;
+  cursor: grab;
+  transition: 0.8s;
 }
 .close-sider-bar {
   position: fixed;
-  top: 45%;
+  top: 50vh;
   right: 202px;
   z-index: 1000;
-  transition: 2s;
+  cursor: grab;
+  transition: 0.8s;
 }
 .item-close-sider-bar {
   position: fixed;
@@ -21,7 +23,7 @@
   right: -200px;
   width: 200px;
   flex-direction: column;
-  transition: 2s;
+  transition: 0.8s;
 }
 .item-open-sider-bar {
   position: fixed;
@@ -31,7 +33,7 @@
   right: 5px;
   width: 200px;
   flex-direction: column;
-  transition: 2s;
+  transition: 0.8s;
 }
 .group-sider-bar {
   margin-top: -350px;
@@ -114,7 +116,9 @@ ul li:hover {
   z-index: 1000;
   padding: 10px;
 }
-
+.icon-menu-open {
+  cursor: grab;
+}
 .item-menu-header-mobile {
   display: flex;
   flex-direction: column;
@@ -159,7 +163,7 @@ ul li:hover {
 
 /* Body */
 .content {
-  margin-top: 98px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   background-image: url("../assets/web/bg.png");
@@ -174,6 +178,7 @@ ul li:hover {
   left: 3%;
   padding: 2%;
   width: 20vw;
+  margin-top: 8vh;
 }
 .banner {
   display: flex;
@@ -184,12 +189,12 @@ ul li:hover {
 .banner-people {
   position: absolute;
   width: 25vw;
-  margin-top: 10vh;
+  margin-top: 6vw;
   z-index: 1;
 }
 .banner-rectage {
   width: 40vw;
-  margin-top: 37%;
+  margin-top: 33%;
   z-index: 2;
 }
 .banner-date {
@@ -273,16 +278,10 @@ ul li:hover {
   color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 40px;
-}
-.footer-items {
-  display: flex;
-  flex: 1;
   justify-content: center;
-  align-items: center;
-  margin: 0px 50px 0px 50px;
+}
+.footer > img {
+  margin: 0 5vw;
 }
 .footer-content {
   display: flex;
@@ -291,14 +290,13 @@ ul li:hover {
   align-items: center;
   align-content: center;
   text-align: center;
-  padding: 10px 40px !important;
-  flex: 2;
+  line-height: 24px;
+  font-family: Tahoma, sans-serif;
 }
-.footer > div {
-  line-height: 30px;
-  text-align: center;
-  vertical-align: middle;
+.footer-content > div {
+  width: 40vw;
 }
+
 .footer-link > a {
   color: #fff;
   padding: 0 10px;
@@ -342,23 +340,25 @@ ul li:hover {
     display: none;
   }
 
-  .footer img {
-    width: 30%;
-  }
-
   .footer {
     flex-direction: column;
+    width: 100%;
+  }
+  .footer-logo {
+    size: 50%;
   }
 
-  .footer-items {
+  .footer-content {
     color: #fff;
     text-align: center;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 171.429% */
-    text-transform: capitalize;
+    line-height: 24px;
+  }
+  .footer-content > div {
+    width: 80vw;
   }
 
   .footer-18 {
@@ -422,7 +422,6 @@ ul li:hover {
 }
 @media screen and (max-width: 768px) {
   .footer img {
-    width: 17%;
     margin-left: 2vw;
   }
   .footer {
@@ -436,35 +435,12 @@ ul li:hover {
   .logo-pokemon {
     margin-top: 3vh;
   }
-  .banner-people {
-    margin-top: 0;
-    width: 70vw;
-  }
-  .banner-shop {
-    width: 90vw;
-  }
-  .banner-rectage {
-    width: 90vw;
-    margin-top: 50%;
-  }
   .banner-date {
     left: 44%;
     top: 93%;
   }
-  .banner-date > img {
-    width: 50vw;
-  }
-  .banner-date > div {
-    margin-top: -12.5%;
-    margin-left: 10%;
-  }
   .banner-format-countdown {
-    font-size: 2vw;
     gap: 17vw;
-  }
-  .countdown {
-    width: 90vw;
-    margin-top: 3%;
   }
 }
 @media screen and (max-width: 640px) {
@@ -472,22 +448,13 @@ ul li:hover {
     width: 90vw;
     margin-top: 3%;
   }
-  .item-menu-header-mobile {
-    height: 100%;
-  }
 }
 @media screen and (max-width: 480px) {
   .banner-rectage {
     margin-top: 50%;
   }
-  .item-menu-header-mobile {
-    height: 100%;
-  }
 }
 @media screen and (min-width: 1280px) {
-  .banner-rectage {
-    margin-top: 40%;
-  }
   .open-sider-bar {
     top: 45%;
   }
@@ -502,13 +469,13 @@ ul li:hover {
   }
 }
 @media screen and (min-width: 1536px) {
-  .banner-rectage {
-    margin-top: 35%;
-  }
   .open-sider-bar {
     top: 37%;
   }
   .close-sider-bar {
     top: 37%;
+  }
+  .footer-content {
+    /* width: 35vw; */
   }
 }

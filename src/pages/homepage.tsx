@@ -18,6 +18,7 @@ import peopleBg from "../assets/web/pngkey1.png";
 import styles from "./homepage.module.css";
 import LogoPokemon from "../assets/web/LogoPKM.png";
 import Download from "../assets/web/bg_download.png";
+import IconClose from "../assets/web/button_close.png";
 
 const { Header, Content, Footer } = Layout;
 const { Countdown } = Statistic;
@@ -98,16 +99,16 @@ export default function HomePage() {
           <img src={googlePlay} />
           <img src={androi} />
         </div>
+        <img
+          src={collapsed ? viewBox : IconClose}
+          className={
+            collapsed ? styles["close-sider-bar"] : styles["open-sider-bar"]
+          }
+          onClick={() => {
+            setCollapsed(!collapsed);
+          }}
+        />
       </div>
-      <img
-        src={viewBox}
-        className={
-          collapsed ? styles["close-sider-bar"] : styles["open-sider-bar"]
-        }
-        onClick={() => {
-          setCollapsed(!collapsed);
-        }}
-      />
       <Content className={styles["content"]}>
         <img className={styles["logo-pokemon"]} src={LogoPokemon} />
         <div className={styles["banner"]}>
@@ -136,8 +137,8 @@ export default function HomePage() {
         </div>
       </Content>
       <Footer className={styles["footer"]}>
-        <img src={Asset} width={"10%"} />
-        <div className={styles["footer-content footer-items "]}>
+        <img src={Asset} className={styles["footer-logo"]} />
+        <div className={styles["footer-content"]}>
           <div className={styles["footer-link"]}>
             <a>Hỗ trợ</a>
             <div>|</div>

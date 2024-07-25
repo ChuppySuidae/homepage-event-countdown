@@ -2,6 +2,11 @@
   font-family: "UTM_Talling";
   src: url("public/UTMTallingBold.ttf");
 }
+@font-face {
+  font-family: "Tahoma";
+  src: url("public/tahoma.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
